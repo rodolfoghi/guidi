@@ -2,19 +2,19 @@
   "name": "GUIDI Web Page",
   "short_name": "GWP",
   "icons": [{
-        "src": "images/touch/icon-128x128.png",
+        "src": "images/favicon.ico",
         "sizes": "128x128",
         "type": "image/png"
       }, {
-        "src": "images/touch/apple-touch-icon.png",
+        "src": "images/favicon.ico",
         "sizes": "152x152",
         "type": "image/png"
       }, {
-        "src": "images/touch/ms-touch-icon-144x144-precomposed.png",
+        "src": "images/favicon.ico",
         "sizes": "144x144",
         "type": "image/png"
       }, {
-        "src": "images/touch/chrome-touch-icon-192x192.png",
+        "src": "images/favicon.ico",
         "sizes": "192x192",
         "type": "image/png"
       }],
