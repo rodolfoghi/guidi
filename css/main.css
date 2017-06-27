@@ -11,7 +11,7 @@ body, h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/images/profile_guidi.jpg');
+    background-image: url('images/profile_guidi.jpg');
     min-height: 100%;
 }
 
