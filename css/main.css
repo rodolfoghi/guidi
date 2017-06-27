@@ -1,5 +1,6 @@
 body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif
+  /*font-family: "Montserrat", sans-serif*/
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .w3-row-padding img {
@@ -12,4 +13,8 @@ body, h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-image: url('/images/profile_guidi.jpg');
     min-height: 100%;
+}
+
+.letter-name {
+  display: inline-grid;
 }
