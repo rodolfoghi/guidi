@@ -70,7 +70,7 @@
         <div class="w3-col-l2 w3-green w3-round-xxlarge w3-padding letter-name to-animate">D</div>
         <div class="w3-col-l2 w3-purple w3-round-xxlarge w3-padding letter-name to-animate">I</div>
     </h2>
-    <p>Palhaço, contador de histórias, aspirante a gaitista e mágico.</p>
+    <p class="w3-xlarge">Palhaço, contador de histórias, aspirante a gaitista e mágico.</p>
     <img src="images/profile_guidi.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
     <img src="images/profile_guidi.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
   </header>
@@ -83,23 +83,29 @@
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="images/trabalhos/trabalho_04.jpg" style="width:100%">
-        <img src="images/trabalhos/trabalho_03.jpg" style="width:100%">
-        <img src="images/trabalhos/trabalho_02.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_04.jpg" style="width:100%;">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_03.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_02.jpg" style="width:100%">
       </div>
 
       <div class="w3-half">
-        <img src="images/trabalhos/trabalho_01.jpg" style="width:100%">
-        <img src="images/trabalhos/trabalho_05.jpg" style="width:100%">
-        <img src="images/trabalhos/trabalho_06.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_01.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_05.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_06.jpg" style="width:100%">
       </div>
 
       <div class="w3-half">
-        <img src="images/trabalhos/trabalho_08.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_08.jpg" style="width:100%">
       </div>
 
       <div class="w3-half">
-        <img src="images/trabalhos/trabalho_09.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_09.jpg" style="width:100%">
+      </div>
+
+      <div id="modal_img" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-center">
+          <img class="w3-modal-content" id="modal_img01" style="width:70%">
+        </div>
       </div>
     <!-- End photo grid -->
     </div>

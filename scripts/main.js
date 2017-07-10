@@ -26,3 +26,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   setInterval(addClassAnime, 3000);
 });
+
+function showImgInModal(element) {
+  document.getElementById("modal_img01").src = element.src;
+  document.getElementById("modal_img").style.display = "block";
+}
