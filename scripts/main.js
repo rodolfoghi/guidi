@@ -31,3 +31,18 @@ function showImgInModal(element) {
   document.getElementById("modal_img01").src = element.src;
   document.getElementById("modal_img").style.display = "block";
 }
+
+var carouselIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    carouselIndex++;
+    if (carouselIndex > x.length) {carouselIndex = 1}
+    x[carouselIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+}
