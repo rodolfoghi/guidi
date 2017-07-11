@@ -35,17 +35,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
     <!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+<nav id="nav-main" class="w3-sidebar w3-hide-medium w3-hide-small">
   <div class="bgimg"></div>
 </nav>
 
 <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" id="mySidebarLink">
     <i class="fa fa-remove"></i>
   </a>
   <div class="w3-bar-block w3-center">
@@ -56,10 +56,10 @@
 </nav>
 
 <!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+<div class="w3-main w3-padding-large page-content">
 
   <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
   <!-- Header -->
   <header class="w3-container w3-center" id="home">
@@ -71,20 +71,20 @@
         <div class="w3-col-l2 w3-purple w3-round-xxlarge w3-padding letter-name to-animate">I</div>
     </h2>
     <p class="w3-xlarge">Palhaço, contador de histórias, aspirante a gaitista e mágico.</p>
-    <div class="w3-content w3-section" style="max-width:500px">
-      <img class="mySlides" src="images/projeto1x1.svg" style="width:100%">
-      <img class="mySlides" src="images/trabalhos/trabalho_01.jpg" style="width:100%">
-      <img class="mySlides" src="images/trabalhos/trabalho_02.jpg" style="width:100%">
-      <img class="mySlides" src="images/trabalhos/trabalho_03.jpg" style="width:100%">
-      <img class="mySlides" src="images/trabalhos/trabalho_04.jpg" style="width:100%">
-      <img class="mySlides" src="images/trabalhos/trabalho_05.jpg" style="width:100%">
-      <img class="mySlides" src="images/trabalhos/trabalho_06.jpg" style="width:100%">
-      <img class="mySlides" src="images/trabalhos/trabalho_07.jpg" style="width:100%">
-      <img class="mySlides" src="images/trabalhos/trabalho_08.jpg" style="width:100%">
-      <img class="mySlides" src="images/trabalhos/trabalho_09.jpg" style="width:100%">
+    <div class="w3-content w3-section carousel-images">
+      <img class="mySlides" src="images/projeto1x1.svg">
+      <img class="mySlides" src="images/trabalhos/trabalho_01.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_02.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_03.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_04.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_05.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_06.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_07.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_08.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_09.jpg">
     </div>
 
-    <img src="images/profile_guidi.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="images/profile_guidi.jpg" class="w3-image w3-hide-large w3-hide-small w3-round profile-img-xlarge">
     <img src="images/profile_guidi.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
   </header>
 
@@ -94,30 +94,30 @@
     <hr class="w3-opacity">
 
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-row-padding grid-photos">
       <div class="w3-half">
-        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_04.jpg" style="width:100%;">
-        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_03.jpg" style="width:100%">
-        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_02.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_04.jpg">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_03.jpg">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_02.jpg">
       </div>
 
       <div class="w3-half">
-        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_01.jpg" style="width:100%">
-        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_05.jpg" style="width:100%">
-        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_06.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_01.jpg">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_05.jpg">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_06.jpg">
       </div>
 
       <div class="w3-half">
-        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_08.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_08.jpg">
       </div>
 
       <div class="w3-half">
-        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_09.jpg" style="width:100%">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_09.jpg">
       </div>
 
       <div id="modal_img" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
         <div class="w3-center">
-          <img class="w3-modal-content" id="modal_img01" style="width:70%">
+          <img class="w3-modal-content" id="modal_img01">
         </div>
       </div>
     <!-- End photo grid -->
@@ -126,7 +126,7 @@
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact">
     <h2>Entre em contato</h2>
     <hr class="w3-opacity">
 
@@ -139,7 +139,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
     <!--
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
