@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guidi</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="GUIDI">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="GUIDI">
+    <link rel="apple-touch-icon" href="favicon.ico">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="favicon.ico">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <!-- Sidebar with image -->
+<nav id="nav-main" class="w3-sidebar w3-hide-medium w3-hide-small">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" id="mySidebarLink">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Início</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Trabalhos</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contato</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large page-content">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" id="home">
+    <h2 class="w3-row to-animate">
+        <div class="w3-col-l2 w3-blue w3-round-xxlarge w3-padding letter-name to-animate">G</div>
+        <div class="w3-col-l2 w3-pink w3-round-xxlarge w3-padding letter-name to-animate">U</div>
+        <div class="w3-col-l2 w3-cyan w3-round-xxlarge w3-padding letter-name to-animate">I</div>
+        <div class="w3-col-l2 w3-green w3-round-xxlarge w3-padding letter-name to-animate">D</div>
+        <div class="w3-col-l2 w3-purple w3-round-xxlarge w3-padding letter-name to-animate">I</div>
+    </h2>
+    <p class="w3-xlarge">Palhaço, contador de histórias, aspirante a gaitista e mágico.</p>
+    <div class="w3-content w3-section carousel-images">
+      <img class="mySlides" src="images/projeto1x1.svg">
+      <img class="mySlides" src="images/trabalhos/trabalho_01.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_02.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_03.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_04.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_05.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_06.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_07.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_08.jpg">
+      <img class="mySlides" src="images/trabalhos/trabalho_09.jpg">
+    </div>
+
+    <img src="images/profile_guidi.jpg" class="w3-image w3-hide-large w3-hide-small w3-round profile-img-xlarge">
+    <img src="images/profile_guidi.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">Alguns trabalhos</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding grid-photos">
+      <div class="w3-half">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_04.jpg">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_03.jpg">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_02.jpg">
+      </div>
+
+      <div class="w3-half">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_01.jpg">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_05.jpg">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_06.jpg">
+      </div>
+
+      <div class="w3-half">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_08.jpg">
+      </div>
+
+      <div class="w3-half">
+        <img onclick="showImgInModal(this)" class="w3-hover-opacity" src="images/trabalhos/trabalho_09.jpg">
+      </div>
+
+      <div id="modal_img" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+        <div class="w3-center">
+          <img class="w3-modal-content" id="modal_img01">
+        </div>
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact">
+    <h2>Entre em contato</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Caxias do Sul, RS</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Fones: (54) 3537.6526 / 9 9971.7396</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rodolfoghi@gmail.com</p>
+    </div>
+  <!-- End Contact Section -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
+    <!--
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  -->
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+<script src="scripts/main.js"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+  </body>
+</html>
